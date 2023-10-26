@@ -5,10 +5,12 @@ import com.sekwah.narutomod.block.NarutoBlocks;
 import com.sekwah.narutomod.client.model.entity.SubstitutionLogModel;
 import com.sekwah.narutomod.client.model.item.model.*;
 import com.sekwah.narutomod.client.model.jutsu.FireballJutsuModel;
+import com.sekwah.narutomod.client.model.jutsu.Watahsharkbakudan;
 import com.sekwah.narutomod.client.model.jutsu.WaterBulletModel;
 import com.sekwah.narutomod.client.renderer.entity.*;
 import com.sekwah.narutomod.client.renderer.entity.jutsuprojectile.FireballJutsuRenderer;
 import com.sekwah.narutomod.client.renderer.entity.jutsuprojectile.WaterBulletJutsuRenderer;
+import com.sekwah.narutomod.client.renderer.entity.jutsuprojectile.WaterSharkBombJutsuRenderer;
 import com.sekwah.narutomod.entity.NarutoEntities;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -39,6 +41,7 @@ public class NarutoRenderEvents {
         event.registerEntityRenderer(NarutoEntities.PAPER_BOMB.get(), PaperBombRenderer::new);
 
         event.registerEntityRenderer(NarutoEntities.FIREBALL_JUTSU.get(), FireballJutsuRenderer::new);
+        event.registerEntityRenderer(NarutoEntities.WATERSHARKBOMB_JUTSU.get(), WaterSharkBombJutsuRenderer::new);
         event.registerEntityRenderer(NarutoEntities.WATER_BULLET_JUTSU.get(), WaterBulletJutsuRenderer::new);
 
         event.registerEntityRenderer(NarutoEntities.SUBSTITUTION_LOG.get(), SubstitutionLogRenderer::new);
@@ -66,6 +69,7 @@ public class NarutoRenderEvents {
         // Jutsu
         event.registerLayerDefinition(FireballJutsuModel.LAYER_LOCATION, FireballJutsuModel::createLayer);
         event.registerLayerDefinition(WaterBulletModel.LAYER_LOCATION, WaterBulletModel::createLayer);
+        event.registerLayerDefinition(Watahsharkbakudan.LAYER_LOCATION, Watahsharkbakudan::createLayer);
 
         // Entity
         event.registerLayerDefinition(SubstitutionLogModel.LAYER_LOCATION, SubstitutionLogModel::createBodyLayer);

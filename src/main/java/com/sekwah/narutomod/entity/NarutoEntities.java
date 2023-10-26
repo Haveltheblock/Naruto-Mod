@@ -4,6 +4,7 @@ import com.sekwah.narutomod.NarutoMod;
 import com.sekwah.narutomod.entity.item.PaperBombEntity;
 import com.sekwah.narutomod.entity.jutsuprojectile.FireballJutsuEntity;
 import com.sekwah.narutomod.entity.jutsuprojectile.WaterBulletJutsuEntity;
+import com.sekwah.narutomod.entity.jutsuprojectile.WaterSharkBombEntity;
 import com.sekwah.narutomod.entity.projectile.ExplosiveKunaiEntity;
 import com.sekwah.narutomod.entity.projectile.KunaiEntity;
 import com.sekwah.narutomod.entity.projectile.SenbonEntity;
@@ -45,6 +46,9 @@ public class NarutoEntities {
 
     public static final RegistryObject<EntityType<FireballJutsuEntity>> FIREBALL_JUTSU = register("fireball_jutsu",
             EntityType.Builder.<FireballJutsuEntity>of(FireballJutsuEntity::new, MobCategory.MISC).sized(1.5F, 1.5F).clientTrackingRange(4).updateInterval(10));
+
+    public static final RegistryObject<EntityType<WaterSharkBombEntity>> WATERSHARKBOMB_JUTSU = register("watersharkbomb_jutsu",
+            EntityType.Builder.<WaterSharkBombEntity>of(WaterSharkBombEntity::new, MobCategory.MISC).sized(1.5F, 1.5F).clientTrackingRange(4).updateInterval(10));
 
     public static final RegistryObject<EntityType<WaterBulletJutsuEntity>> WATER_BULLET_JUTSU = register("water_bullet_jutsu",
             EntityType.Builder.<WaterBulletJutsuEntity>of(WaterBulletJutsuEntity::new, MobCategory.MISC).fireImmune().sized(0.3F, 0.3F).clientTrackingRange(4).updateInterval(10));

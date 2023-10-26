@@ -5,6 +5,7 @@ import com.sekwah.narutomod.NarutoMod;
 import com.sekwah.narutomod.abilities.jutsus.FireballJutsuAbility;
 import com.sekwah.narutomod.abilities.jutsus.SubstitutionJutsuAbility;
 import com.sekwah.narutomod.abilities.jutsus.WaterBulletJutsuAbility;
+import com.sekwah.narutomod.abilities.jutsus.WaterSharkBomb;
 import com.sekwah.narutomod.abilities.utility.ChakraChargeAbility;
 import com.sekwah.narutomod.abilities.utility.DoubleJumpAbility;
 import com.sekwah.narutomod.abilities.utility.LeapAbility;
@@ -44,6 +45,7 @@ public class NarutoAbilities {
     public static final RegistryObject<WaterWalkAbility> WATER_WALK = ABILITY.register("water_walk", WaterWalkAbility::new);
 
     public static final RegistryObject<FireballJutsuAbility> FIREBALL = ABILITY.register("fireball", FireballJutsuAbility::new);
+    public static final RegistryObject<WaterSharkBomb> WATER_SHARK_BOMB = ABILITY.register("water_shark_bomb", WaterSharkBomb::new);
 
     public static final RegistryObject<WaterBulletJutsuAbility> WATER_BULLET = ABILITY.register("water_bullet", WaterBulletJutsuAbility::new);
 
